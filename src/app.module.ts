@@ -7,7 +7,12 @@ import { MongooseModule } from '@nestjs/mongoose';
 require('dotenv').config();
 
 @Module({
-  imports: [PlacesModule, MongooseModule.forRoot(process.env.MONGO_URI)],
+  imports: [
+    PlacesModule,
+    MongooseModule.forRoot(
+      'mongodb+srv://veerrohitv:Pine123tree@cluster0.gex3w0o.mongodb.net/?retryWrites=true&w=majority',
+    ),
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

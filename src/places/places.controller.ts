@@ -35,8 +35,13 @@ export class PlacesController {
   //   return this.placesService.update(+id, updatePlaceDto);
   // }
 
-  @Post()
+  @Post('delete')
   remove(@Body() body: any) {
     return this.placesService.remove(body.id);
+  }
+
+  @Get('test')
+  test() {
+    return 'Hello World';
   }
 }
