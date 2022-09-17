@@ -20,6 +20,12 @@ export class Place {
   @Prop()
   email: string;
 
+  @Prop()
+  website: string;
+
+  @Prop()
+  phone: string;
+
   //TODO: Add more fields later when required over here
 }
 

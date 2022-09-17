@@ -22,7 +22,7 @@ export class PlacesService {
     return places;
   }
 
-  findOne(id: number) {
+  findOne(id: number): Promise<Place> {
     const place = this.placeModel.findById(id).exec();
     return place;
   }
@@ -31,7 +31,7 @@ export class PlacesService {
   //
   // }
 
-  remove(id: number) {
+  remove(id: number): Promise<Place> {
     const place = this.placeModel.findByIdAndDelete(id).exec();
     return place;
   }
