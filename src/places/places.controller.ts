@@ -1,3 +1,5 @@
+// This file contains all the CRUD routes that call a function from the PlacesService file
+// If you want to add a new route, you can do it here
 import {
   Controller,
   Get,
